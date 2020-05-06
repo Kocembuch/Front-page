@@ -59,10 +59,12 @@ nav.desktop a:hover i {
 
 header {
     float: left;
-    width: calc(100% - (var(--headerWidth)));
+    display: block;
+    width: calc(100vw - (var(--headerWidth)));
     background-image: url("dom3.jpg");
     background-size: cover;
     background-position: center;
+    background-color: wheat;
   
 }
 
@@ -109,10 +111,13 @@ nav.mobile {
         font-size: 25px;
         text-align: center;
         line-height: calc(var(--mainHeight) / 5);
+        transition: 0.3s;
     }
 
     nav.mobile a:hover {
         color: orange;
+       font-size: 30px;
     }
 
+    
 }
