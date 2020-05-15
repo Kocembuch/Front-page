@@ -9,4 +9,4 @@ Fully responsive
 
 ### Desctiption:
 - clean an simple front page as an idea for a small company business card;
-- fully responsive for two resolutions;
+- fully responsive for different mobiles, tablets and desktop.
