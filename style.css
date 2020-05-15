@@ -1,6 +1,6 @@
 :root {
     --mainHeight: 87vh;
-    --headerWidth: 250px;
+    --navWidth: 250px;
     --headerWidthMobile: 72px;
 }
 
@@ -11,18 +11,19 @@
 }
 
 .wrap {
-    max-width: 1280px;
+    /* max-width: 1280px; */
     margin: 0 auto;
     overflow: hidden;
 }
 
-nav, header {
+nav,
+header {
     height: var(--mainHeight);
 }
 
 nav {
     float: left;
-    width: var(--headerWidth);
+    width: var(--navWidth);
 }
 
 nav ul {
@@ -31,7 +32,8 @@ nav ul {
 }
 
 li {
-    text-transform: lowercase;    /* tu zmieni© styl menu */
+    text-transform: lowercase;
+    /* tu zmieni© styl menu */
 }
 
 nav.desktop a {
@@ -60,17 +62,18 @@ nav.desktop a:hover i {
 header {
     float: left;
     display: block;
-    width: calc(100vw - (var(--headerWidth)));
-    background-image: url("dom3.jpg");
+    width: calc(100vw - (var(--navWidth)));
+    background-image: url("dom_L.jpg");
     background-size: cover;
-    background-position: center;
-    background-color: wheat;
-  
+    background-position: right;
+    /* background-color: black; */
+
 }
 
 section {
     margin-top: 0px;
 }
+
 section h1 {
     font-size: 40px;
     font-family: arial;
@@ -85,8 +88,8 @@ nav.mobile {
     display: none;
 }
 
-@media (max-width: 680px) {
-    
+@media (max-width: 1024px) {
+
     nav.desktop {
         display: none;
     }
@@ -102,6 +105,9 @@ nav.mobile {
 
     header {
         width: 100%;
+        /* background-image: url("dom_L.jpg"); */
+        background-size: cover;
+        background-position: left;
     }
 
     nav.mobile a {
@@ -116,8 +122,8 @@ nav.mobile {
 
     nav.mobile a:hover {
         color: orange;
-       font-size: 30px;
+        font-size: 30px;
     }
 
-    
+
 }
